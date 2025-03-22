@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/op_expUc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:uM>
+		<sp:title>
+			<op:title>
+				<sc:para xml:space="preserve">Concevoir et fabriquer un système de lancement pour fusée à eau</sc:para>
+			</op:title>
+		</sp:title>
+		<sp:sTitle>
+			<op:title>
+				<sc:para xml:space="preserve">Les lanceurs</sc:para>
+			</op:title>
+		</sp:sTitle>
+		<sp:info>
+			<op:info>
+				<sp:keywds>
+					<op:keywds>
+						<sp:keywd>lanceur</sp:keywd>
+						<sp:keywd>rampe</sp:keywd>
+						<sp:keywd>pression</sp:keywd>
+						<sp:keywd>sécurité</sp:keywd>
+						<sp:keywd>raccords</sp:keywd>
+						<sp:keywd>pompe</sp:keywd>
+					</op:keywds>
+				</sp:keywds>
+				<sp:cc>gnu-fdl</sp:cc>
+				<sp:ccVersion>3.0</sp:ccVersion>
+				<sp:cpyrgt>
+					<op:sPara>
+						<sc:para xml:space="preserve">Steve Prud'Homme</sc:para>
+					</op:sPara>
+				</sp:cpyrgt>
+			</op:info>
+		</sp:info>
+	</op:uM>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">🛠️ L’importance du lanceur</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi/>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Les lanceurs sont <sc:inlineStyle role="emp">plus complexes</sc:inlineStyle></sc:para>
+									<sc:para xml:space="preserve">à construire que les fusées elles-mêmes, et il faut souvent plus de temps pour en fabriquer un.</sc:para>
+									<sc:para xml:space="preserve">C’est pourquoi vous pourriez envisager d’acheter un système commercial.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+					<sp:ex>
+						<op:pbTi/>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Le système de la marque <sc:inlineStyle role="emp">Maplin</sc:inlineStyle>, testé avec la fusée "The Flying Gherkin".</sc:para>
+								</op:txt>
+							</sp:txt>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Ce système utilise :</sc:para>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve">une <sc:inlineStyle role="emp">buse spéciale</sc:inlineStyle> vissée à la place du bouchon</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">un <sc:inlineStyle role="emp">connecteur de tuyau d’arrosage</sc:inlineStyle></sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">un <sc:inlineStyle role="emp">mécanisme de libération</sc:inlineStyle> activé par un <sc:inlineStyle role="emp">câble de frein de vélo</sc:inlineStyle></sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:ex>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">🧰 Construire votre propre lanceur</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">Contexte</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Avant de construire mon propre lanceur, j’ai d’abord tenté de reproduire un modèle vu en ligne… qui n’a pas bien fonctionné.</sc:para>
+								</op:txt>
+							</sp:txt>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Voici donc deux conceptions fiables, créées par des passionnés de la NPL :</sc:para>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Modèle A</sc:inlineStyle> : sans tube de lancement</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Modèle B</sc:inlineStyle> : avec tube de lancement</sc:para>
+											<sc:para xml:space="preserve">(Il existe de nombreuses variantes possibles, mais celles-ci sont largement éprouvées.)</sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">🧱 Les deux modèles de lanceur</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Modèle A – Sans tube de lancement</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+					<sp:pb>
+						<op:pb>
+							<sp:info>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Créé par <sc:inlineStyle role="emp">Jaco Stander</sc:inlineStyle>, basé sur le concept du <sc:inlineStyle role="emp">lanceur à colliers de serrage (tie wraps)</sc:inlineStyle> d’Ian Clark.</sc:para>
+										</op:txt>
+									</sp:txt>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Matériaux :</sc:para>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Tubes de plomberie en cuivre de <sc:inlineStyle role="emp">15 mm</sc:inlineStyle></sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Raccords de plomberie</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Soudure ou assemblages mécaniques (compression ou « push-fit »)</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+							<sp:warning>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Attention</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">⚠️ Il faut <sc:inlineStyle role="emp">poncer le filetage</sc:inlineStyle> du col de la bouteille pour que les colliers tiennent correctement.</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:warning>
+							<sp:meth>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Étapes :</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">La bouteille est insérée dans un adaptateur de plomberie.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Un joint torique assure l’étanchéité.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Des colliers de serrage maintiennent la bouteille en place.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Une pièce en plastique coulisse pour libérer la fusée au moment voulu.</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:meth>
+							<sp:rem>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Limite</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Le goulot est le seul point de support → risque d’affaissement, surtout avec des fusées lourdes.</sc:para>
+											<sc:para xml:space="preserve">✅ Solution : Ajouter une <sc:inlineStyle role="emp">rampe</sc:inlineStyle> ou adopter le modèle B.</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:rem>
+						</op:pb>
+					</sp:pb>
+				</op:expUcDiv>
+			</sp:div>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Modèle B – Avec tube de lancement</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+					<sp:pb>
+						<op:pb>
+							<sp:info>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Conçu par <sc:inlineStyle role="emp">Dave Lowe</sc:inlineStyle>.</sc:para>
+										</op:txt>
+									</sp:txt>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Utilise :</sc:para>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Tube en plastique de plomberie standard de <sc:inlineStyle role="emp">22 mm</sc:inlineStyle></sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Tube de trop-plein de <sc:inlineStyle role="emp">21,5 mm</sc:inlineStyle></sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Raccords « push-fit »</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+							<sp:meth>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Étapes :</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Percer un trou de <sc:inlineStyle role="emp">22 mm</sc:inlineStyle> au centre d’un bouchon de bouteille.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Faire glisser ce bouchon modifié sur le tube de lancement.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Ajouter un <sc:inlineStyle role="emp">joint torique</sc:inlineStyle> pour assurer l’étanchéité.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Appliquer un peu d’<sc:inlineStyle role="emp">huile ou de graisse</sc:inlineStyle> si nécessaire pour faciliter le glissement.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Ajouter les colliers de serrage et un tube coulissant comme pour le modèle A.</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:meth>
+							<sp:rem>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Avantages :</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">📌 Le tube de lancement apporte deux avantages :</sc:para>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Soutient le poids de la fusée avant le lancement</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Permet une <sc:inlineStyle role="emp">accélération initiale sans perte d’eau</sc:inlineStyle>, ce qui améliore les performances</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:rem>
+						</op:pb>
+					</sp:pb>
+				</op:expUcDiv>
+			</sp:div>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">⚙️ Comparaison des deux modèles</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi/>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:table>
+										<sc:caption xml:space="preserve">Comparaison des deux modèles</sc:caption>
+										<sc:column width="10"/>
+										<sc:column width="10"/>
+										<sc:column width="10"/>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Élément</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Modèle A</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Modèle B</sc:para>
+											</sc:cell>
+										</sc:row>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Type de tubes</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Cuivre 15 mm</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Plastique 22 mm / 21,5 mm</sc:para>
+											</sc:cell>
+										</sc:row>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Soutien au lancement</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Goulot uniquement</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Tube interne</sc:para>
+											</sc:cell>
+										</sc:row>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Performance</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Bonne</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Supérieure grâce au "démarrage mobile"</sc:para>
+											</sc:cell>
+										</sc:row>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Difficulté de fabrication</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Moyenne à élevée (soudure)</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Moyenne (perçage + ajustements)</sc:para>
+											</sc:cell>
+										</sc:row>
+										<sc:row>
+											<sc:cell>
+												<sc:para xml:space="preserve">Sécurité et stabilité</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Moins stable</sc:para>
+											</sc:cell>
+											<sc:cell>
+												<sc:para xml:space="preserve">Plus stable</sc:para>
+											</sc:cell>
+										</sc:row>
+									</sc:table>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">🔩 Raccordement au système de pompe</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi/>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Aucun magasin ne vend un connecteur standard entre votre lanceur et une pompe à vélo.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+					<sp:adv>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">👉 Solution :</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">insérer une <sc:inlineStyle role="emp">valve de pneu</sc:inlineStyle> (vélo ou voiture) dans un raccord de plomberie.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:adv>
+					<sp:ex>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">Insérer une valve dans un embout de tuyau, sans colle.</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">La pression d’air assure l’étanchéité.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:ex>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">🧯 Choix de la pompe</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">Types possibles :</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Pompe à main</sc:inlineStyle></sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Pompe à pied</sc:inlineStyle></sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Pompe à étrier (stirrup pump)</sc:inlineStyle></sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+					<sp:basic>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">🎯 Critère indispensable :</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">avoir un <sc:inlineStyle role="emp">manomètre intégré</sc:inlineStyle> pour suivre la pression.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:basic>
+					<sp:warning>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">Attention !</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">⚠️ Les pompes à main sont fortement déconseillées : très exigeantes physiquement et peu fiables.</sc:para>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:warning>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+</op:expUc>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/op_ueDiv.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<op:ueDiv xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:ueDivM>
+		<sp:title>
+			<op:title>
+				<sc:para xml:space="preserve">Concevoir et fabriquer un système de lancement pour fusée à eau</sc:para>
+			</op:title>
+		</sp:title>
+		<sp:sTitle>
+			<op:title>
+				<sc:para xml:space="preserve">Les lanceurs</sc:para>
+			</op:title>
+		</sp:sTitle>
+	</op:ueDivM>
+	<sp:intro>
+		<op:res>
+			<sp:txt>
+				<op:txt>
+					<sc:para xml:space="preserve">Dans les sections précédentes, nous avons défini ce qu’est une fusée à eau et appris à construire un modèle de base.</sc:para>
+					<sc:para xml:space="preserve">Mais sans un bon <sc:inlineStyle role="emp">système de lancement</sc:inlineStyle>, il est difficile, voire dangereux, de faire décoller votre fusée efficacement.</sc:para>
+					<sc:para xml:space="preserve">Cette section explore différents types de <sc:inlineStyle role="emp">lanceurs</sc:inlineStyle> : du système commercial aux modèles faits maison.</sc:para>
+					<sc:para xml:space="preserve">Vous y découvrirez les principes mécaniques, les matériaux à utiliser, et les points critiques comme le <sc:inlineStyle role="emp">système de déclenchement</sc:inlineStyle> et la <sc:inlineStyle role="emp">connexion au tuyau de gonflage</sc:inlineStyle>.</sc:para>
+					<sc:para xml:space="preserve">Deux modèles détaillés (avec et sans tube de lancement) vous seront proposés.</sc:para>
+				</op:txt>
+			</sp:txt>
+		</op:res>
+	</sp:intro>
+	<sp:courseUc href="grain_concevoir_fabriquer_systeme_lancement_fusee_eau.xml"/>
+</op:ueDiv>

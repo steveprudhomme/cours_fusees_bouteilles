@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/op_expUc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:uM>
+		<sp:title>
+			<op:title>
+				<sc:para xml:space="preserve">Comment fabriquer une fusée à eau de base</sc:para>
+			</op:title>
+		</sp:title>
+		<sp:info>
+			<op:info>
+				<sp:index/>
+			</op:info>
+		</sp:info>
+	</op:uM>
+	<sp:pb>
+		<op:pb>
+			<sp:info>
+				<op:pbTi/>
+				<op:res>
+					<sp:txt>
+						<op:txt>
+							<sc:para xml:space="preserve">Dans la section précédente, nous avons vu ce qu’était une fusée à eau.</sc:para>
+							<sc:para xml:space="preserve">Dans cette section, nous allons voir en détail comment construire une <sc:inlineStyle role="emp">fusée de base</sc:inlineStyle> qui vole plutôt bien dans une grande variété de conditions.</sc:para>
+							<sc:para xml:space="preserve">La manière de lancer cette fusée est expliquée dans la section suivante.</sc:para>
+						</op:txt>
+					</sp:txt>
+				</op:res>
+			</sp:info>
+		</op:pb>
+	</sp:pb>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">Une fusée de base</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:info>
+						<op:pbTi>
+							<sp:title>
+								<op:title>
+									<sc:para xml:space="preserve">Liste du matériel requis</sc:para>
+								</op:title>
+							</sp:title>
+						</op:pbTi>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Une <sc:inlineStyle role="emp">bouteille de 2 litres de boisson gazeuse</sc:inlineStyle> : elle constituera le corps principal de la fusée.</sc:para>
+											<sc:para xml:space="preserve">⚠️ N’utilisez que des bouteilles ayant contenu des boissons gazeuses : les bouteilles similaires ayant contenu des jus ou des boissons lactées ne conviennent pas.</sc:para>
+											<sc:para xml:space="preserve">Les bouteilles de boisson gazeuse sont fabriquées en PET (Polyéthylène Téréphtalate), un plastique extrêmement résistant.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Une <sc:inlineStyle role="emp">balle de tennis</sc:inlineStyle> ou une balle en caoutchouc d’environ <sc:inlineStyle role="emp">60 g</sc:inlineStyle> : elle formera la partie principale du cône de nez.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Du <sc:inlineStyle role="emp">carton ondulé</sc:inlineStyle> ou, mieux encore, du <sc:inlineStyle role="emp">plastique ondulé</sc:inlineStyle> : pour fabriquer les ailerons.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Du <sc:inlineStyle role="emp">ruban adhésif résistant</sc:inlineStyle>, style « Duck Tape ».</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Une <sc:inlineStyle role="emp">paire de ciseaux</sc:inlineStyle> ou un <sc:inlineStyle role="emp">couteau</sc:inlineStyle>.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Temps nécessaire</sc:inlineStyle> : entre 30 et 40 minutes.</sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:info>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">À quoi cela ressemblera-t-il ?</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">Étapes de construction</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Préparer la bouteille</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+					<sp:pb>
+						<op:pb>
+							<sp:meth>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Prenez une bouteille de boisson gazeuse de 2 litres.</sc:para>
+											<sc:para xml:space="preserve">Videz-la, retirez les étiquettes, puis rincez-la à l’eau.</sc:para>
+											<sc:para xml:space="preserve">Des boissons très bon marché comme l’eau gazeuse ou la limonade sont idéales pour cela.</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:meth>
+						</op:pb>
+					</sp:pb>
+				</op:expUcDiv>
+			</sp:div>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Ajouter un cône de nez</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+					<sp:pb>
+						<op:pb>
+							<sp:info>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Le cône de nez</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Le cône de nez doit être légèrement pointu.</sc:para>
+											<sc:para xml:space="preserve">Comme nous le verrons dans la section 4, il est aussi important de mettre un peu de poids à l’avant de la fusée.</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+							<sp:meth>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">👉 Ma méthode préférée pour obtenir ces deux effets :</sc:para>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">fixer une balle de tennis</sc:inlineStyle> sur le goulot de la bouteille avec du ruban adhésif.</sc:para>
+											<sc:para xml:space="preserve">Cela n’a peut-être pas l’air très aérodynamique… mais faites-moi confiance : <sc:inlineStyle role="emp">ça vole très bien !</sc:inlineStyle></sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:meth>
+						</op:pb>
+					</sp:pb>
+				</op:expUcDiv>
+			</sp:div>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Ajouter des ailerons</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+					<sp:pb>
+						<op:pb>
+							<sp:info>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Les ailerons ci-dessous ont été découpés dans un vieux panneau immobilier « À vendre ».</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+							<sp:rem>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Techniquement, ce <sc:inlineStyle role="emp">plastique ondulé</sc:inlineStyle> (connu sous le nom de Corriflute™) est imperméable et offre une excellente rigidité par rapport à son poids.</sc:para>
+											<sc:para xml:space="preserve">Si vous ne trouvez pas de panneaux recyclés, vous pouvez en acheter</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:rem>
+							<sp:info>
+								<op:pbTi/>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">Il existe aussi de nombreuses alternatives :</sc:para>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Le <sc:inlineStyle role="emp">carton ondulé</sc:inlineStyle> fonctionne, mais il devient mou après quelques lancements.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Certains <sc:inlineStyle role="emp">matériaux d’emballage</sc:inlineStyle> légers et rigides sont aussi bien adaptés.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Une option populaire : découper de <sc:inlineStyle role="emp">vieux CD</sc:inlineStyle> pour en faire des ailerons.</sc:para>
+													<sc:para xml:space="preserve">⚠️ Si vous utilisez cette méthode, couvrez les bords tranchants avec du ruban pour éviter les blessures si la fusée heurte quelqu’un.</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:info>
+							<sp:meth>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">👉 J’ai utilisé trois ailerons plutôt que quatre : un de moins à découper !</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:para xml:space="preserve">J’ai inclus un schéma montrant les dimensions exactes utilisées, mais ce modèle n’est pas optimal.</sc:para>
+											<sc:para xml:space="preserve">J’aime cette forme car :</sc:para>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">La fusée peut <sc:inlineStyle role="emp">tenir debout sur ses ailerons</sc:inlineStyle> (pratique lors du remplissage).</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Elle ressemble un peu aux <sc:inlineStyle role="emp">fusées des albums de Tintin</sc:inlineStyle> !</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+											<sc:para xml:space="preserve">Les ailerons sont simplement <sc:inlineStyle role="emp">collés au ruban adhésif sur la bouteille</sc:inlineStyle>. Ils doivent être solidement fixés pour ne pas être arrachés au lancement.</sc:para>
+											<sc:para xml:space="preserve">Ils seront probablement endommagés à l’atterrissage, mais ils sont faciles à réparer.</sc:para>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:meth>
+							<sp:adv>
+								<op:pbTi>
+									<sp:title>
+										<op:title>
+											<sc:para xml:space="preserve">Conseils pour les ailerons :</sc:para>
+										</op:title>
+									</sp:title>
+								</op:pbTi>
+								<op:res>
+									<sp:txt>
+										<op:txt>
+											<sc:itemizedList>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Tous les ailerons doivent être <sc:inlineStyle role="emp">identiques</sc:inlineStyle>.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Ils doivent être placés vers l’<sc:inlineStyle role="emp">arrière</sc:inlineStyle> de la fusée.</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Ils doivent être <sc:inlineStyle role="emp">symétriques autour du corps</sc:inlineStyle> (tous les 120° s’il y en a 3, ou 90° s’il y en a 4).</sc:para>
+												</sc:listItem>
+												<sc:listItem>
+													<sc:para xml:space="preserve">Ils doivent être <sc:inlineStyle role="emp">fins</sc:inlineStyle> quand on les regarde de face.</sc:para>
+												</sc:listItem>
+											</sc:itemizedList>
+										</op:txt>
+									</sp:txt>
+								</op:res>
+							</sp:adv>
+						</op:pb>
+					</sp:pb>
+					<sp:div>
+						<op:expUcDiv>
+							<op:expUcDivM>
+								<sp:title>
+									<op:title>
+										<sc:para xml:space="preserve">Décorer la fusée</sc:para>
+									</op:title>
+								</sp:title>
+							</op:expUcDivM>
+							<sp:pb>
+								<op:pb>
+									<sp:info>
+										<op:pbTi/>
+										<op:res>
+											<sp:txt>
+												<op:txt>
+													<sc:para xml:space="preserve">Décorer et nommer votre fusée peut procurer un plaisir démesuré pour un effort minimal.</sc:para>
+													<sc:para xml:space="preserve">Je vous présente… <sc:inlineStyle role="emp">le Cornichon Volant</sc:inlineStyle> !</sc:para>
+												</op:txt>
+											</sp:txt>
+										</op:res>
+									</sp:info>
+								</op:pb>
+							</sp:pb>
+						</op:expUcDiv>
+					</sp:div>
+				</op:expUcDiv>
+			</sp:div>
+			<sp:div>
+				<op:expUcDiv>
+					<op:expUcDivM>
+						<sp:title>
+							<op:title>
+								<sc:para xml:space="preserve">Décorer la fusées bouteille</sc:para>
+							</op:title>
+						</sp:title>
+					</op:expUcDivM>
+				</op:expUcDiv>
+			</sp:div>
+		</op:expUcDiv>
+	</sp:div>
+	<sp:div>
+		<op:expUcDiv>
+			<op:expUcDivM>
+				<sp:title>
+					<op:title>
+						<sc:para xml:space="preserve">Critiquer un modèle de fusée</sc:para>
+					</op:title>
+				</sp:title>
+			</op:expUcDivM>
+			<sp:pb>
+				<op:pb>
+					<sp:ex>
+						<op:pbTi/>
+						<op:res>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve">Cette fusée n’est pas optimisée à bien des égards — nous verrons cela dans la section 4.</sc:para>
+									<sc:para xml:space="preserve">Mais on peut déjà observer quelques pistes d’amélioration :</sc:para>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Elle pourrait être <sc:inlineStyle role="emp">plus légère</sc:inlineStyle>.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Le cône de nez pourrait être <sc:inlineStyle role="emp">plus aérodynamique</sc:inlineStyle>.</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve">Les ailerons pourraient être <sc:inlineStyle role="emp">plus petits</sc:inlineStyle>.</sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+									<sc:para xml:space="preserve">Cela dit, l’aérodynamisme n’est pas mauvais, et le poids + la taille des ailerons garantissent une bonne stabilité.</sc:para>
+									<sc:para xml:space="preserve">En résumé : <sc:inlineStyle role="emp">c’est un bon point de départ</sc:inlineStyle>.</sc:para>
+								</op:txt>
+							</sp:txt>
+							<sp:txt>
+								<op:txt>
+									<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Statistiques clés</sc:inlineStyle></sc:para>
+									<sc:itemizedList>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Volume interne</sc:inlineStyle> : 2 litres</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Masse à vide</sc:inlineStyle> : 171 g (0,171 kg)</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Longueur</sc:inlineStyle> : 45 cm (0,45 m)</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Surface totale des ailerons</sc:inlineStyle> : 1200 cm²</sc:para>
+										</sc:listItem>
+										<sc:listItem>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Surface frontale</sc:inlineStyle> : 62 cm²</sc:para>
+										</sc:listItem>
+									</sc:itemizedList>
+								</op:txt>
+							</sp:txt>
+						</op:res>
+					</sp:ex>
+				</op:pb>
+			</sp:pb>
+		</op:expUcDiv>
+	</sp:div>
+</op:expUc>

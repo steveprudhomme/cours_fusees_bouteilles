@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/op_ue.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<op:ue xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:ueM>
+		<sp:title>
+			<op:title>
+				<sc:para xml:space="preserve">Fusées bouteilles</sc:para>
+			</op:title>
+		</sp:title>
+		<sp:info>
+			<op:info>
+				<sp:keywds>
+					<op:keywds>
+						<sp:keywd>fusées</sp:keywd>
+						<sp:keywd>fuséologie</sp:keywd>
+						<sp:keywd>fuséonautique</sp:keywd>
+						<sp:keywd>bouteilles</sp:keywd>
+					</op:keywds>
+				</sp:keywds>
+				<sp:index/>
+				<sp:cc>gnu-fdl</sp:cc>
+				<sp:ccVersion>3.0</sp:ccVersion>
+				<sp:cpyrgt>
+					<op:sPara>
+						<sc:para xml:space="preserve">Steve Prud'Homme</sc:para>
+					</op:sPara>
+				</sp:cpyrgt>
+			</op:info>
+		</sp:info>
+	</op:ueM>
+	<sp:div href="xml/Qu_est_ce_fusee_eau.xml"/>
+	<sp:div href="xml/division_comment_fabriquer_fusee_eau_base.xml"/>
+	<sp:div href="xml/division_concevoir_fabriquer_systeme_lancement_fusee_eau.xml"/>
+</op:ue>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sng:grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" xmlns:sng="http://relaxng.org/ns/structure/1.0" xmlns:sfile="http://www.utc.fr/ics/scenari/v3/file" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:op="utc.fr:ics/opale3" xmlns:rsc="scenari.eu:remote" xmlns:fw="sc.soft:framework">
+<sng:start>
+
+<sng:ref name="op_ref"/>
+
+</sng:start>
+						<sng:define name="op_langM">
+<sng:element name="op:langM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:code">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_ref">
+<sng:element name="op:ref">
+<sng:ref name="_atts"/>
+<sng:ref name="op_refM"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_refM">
+<sng:element name="op:refM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:ref">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+<sng:element name="sp:desc">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sTxt"/>
+</sng:element>
+</sng:element>
+</sng:define>
+<sng:define name="op_sTxt">
+<sng:element name="op:sTxt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sTxt_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_sTxt_blocs">
+<sng:oneOrMore>
+<sng:choice>
+<sng:element name="sc:para">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sTxt_id"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_sTxt_inline"/>
+</sng:element>
+<sng:element name="sc:itemizedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_sTxt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sTxt_id"/>
+<sng:optional>
+<sng:ref name="op_sTxt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+<sng:element name="sc:orderedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_sTxt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sTxt_id"/>
+<sng:optional>
+<sng:ref name="op_sTxt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+</sng:choice>
+</sng:oneOrMore>
+</sng:define>
+<sng:define name="op_sTxt_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:phrase">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>url</sng:value>
+</sng:attribute>
+<sng:ref name="op_sTxt_id"/>
+<sng:optional>
+<sng:attribute name="xml:lang">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_urlM"/>
+<sng:ref name="op_sTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>emp</sng:value>
+</sng:attribute>
+<sng:ref name="op_sTxt_id"/>
+<sng:ref name="op_sTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>spec</sng:value>
+</sng:attribute>
+<sng:ref name="op_sTxt_id"/>
+<sng:optional>
+<sng:ref name="op_txtM"/>
+</sng:optional>
+<sng:ref name="op_sTxt_inline"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_sTxt_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+<sng:define name="op_txtM">
+<sng:element name="op:txtM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:lang">
+<sng:ref name="_atts"/>
+<sng:choice sk:autoCreate="first" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:ref name="op_langM"/>
+</sng:choice>
+</sng:element>
+</sng:element>
+</sng:define>
+<sng:define name="op_urlM">
+<sng:element name="op:urlM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:url">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+<sng:optional>
+<sng:element name="sp:title">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:doc">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:element name="sp:type">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:weight">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:lang">
+<sng:ref name="_atts"/>
+<sng:choice sk:autoCreate="first" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:ref name="op_langM"/>
+</sng:choice>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+
+<sng:define name="_atts">
+<sng:optional>
+<sng:attribute name="sc:ignore">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+</sng:grammar>

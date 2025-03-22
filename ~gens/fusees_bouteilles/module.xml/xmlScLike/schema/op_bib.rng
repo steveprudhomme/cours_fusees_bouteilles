@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sng:grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" xmlns:sng="http://relaxng.org/ns/structure/1.0" xmlns:sfile="http://www.utc.fr/ics/scenari/v3/file" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:op="utc.fr:ics/opale3" xmlns:rsc="scenari.eu:remote" xmlns:fw="sc.soft:framework">
+<sng:start>
+
+<sng:ref name="op_bib"/>
+
+</sng:start>
+						<sng:define name="op_bib">
+<sng:element name="op:bib">
+<sng:ref name="_atts"/>
+<sng:ref name="op_bibM"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_bibM">
+<sng:element name="op:bibM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:id">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+<sng:element name="sp:type">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:value type="string">web</sng:value>
+<sng:value type="string">bib</sng:value>
+</sng:choice>
+</sng:element>
+<sng:element name="sp:desc">
+<sng:ref name="_atts"/>
+<sng:ref name="op_bibTxt"/>
+</sng:element>
+</sng:element>
+</sng:define>
+<sng:define name="op_bibTxt">
+<sng:element name="op:bibTxt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_bibTxt_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_bibTxt_blocs">
+<sng:element name="sc:para">
+<sng:ref name="op_bibTxt_id"/>
+<sng:ref name="op_bibTxt_inline"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="_atts"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_bibTxt_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>url</sng:value>
+</sng:attribute>
+<sng:ref name="op_bibTxt_id"/>
+<sng:attribute name="url">
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:attribute>
+<sng:ref name="op_bibTxt_inline"/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>title</sng:value>
+</sng:attribute>
+<sng:ref name="op_bibTxt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>auth</sng:value>
+</sng:attribute>
+<sng:ref name="op_bibTxt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>date</sng:value>
+</sng:attribute>
+<sng:ref name="op_bibTxt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ed</sng:value>
+</sng:attribute>
+<sng:ref name="op_bibTxt_id"/>
+<sng:text/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_bibTxt_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+
+<sng:define name="_atts">
+<sng:optional>
+<sng:attribute name="sc:ignore">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+</sng:grammar>

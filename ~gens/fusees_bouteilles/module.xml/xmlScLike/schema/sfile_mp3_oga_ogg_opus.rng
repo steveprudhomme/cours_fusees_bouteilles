@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sng:grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" xmlns:sng="http://relaxng.org/ns/structure/1.0" xmlns:sfile="http://www.utc.fr/ics/scenari/v3/file" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:op="utc.fr:ics/opale3" xmlns:rsc="scenari.eu:remote" xmlns:fw="sc.soft:framework">
+
+						<sng:define name="op_altRes">
+<sng:element name="op:altRes">
+<sng:ref name="_atts"/>
+<sng:oneOrMore>
+<sng:choice>
+<sng:element name="sp:txt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt"/>
+</sng:element>
+<sng:element name="sp:staticRes">
+<sng:ref name="_atts"/>
+<sng:ref name="op_indexM"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+</sng:element>
+</sng:choice>
+</sng:oneOrMore>
+</sng:element>
+</sng:define>
+<sng:define name="op_audioM--dist">
+<sng:element name="op:audioM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:title">
+<sng:ref name="_atts"/>
+<sng:ref name="op_title"/>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:info">
+<sng:ref name="_atts"/>
+<sng:choice sk:autoCreate="first" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:ref name="op_infoBin"/>
+</sng:choice>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:alt">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:element name="sp:transcript">
+<sng:ref name="_atts"/>
+<sng:ref name="op_transcript"/>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:altVideo">
+<sng:ref name="_atts"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:empty xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:otherEncoding">
+<sng:ref name="_atts"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:empty xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:altStatic">
+<sng:ref name="_atts"/>
+<sng:ref name="op_altRes"/>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_indexM">
+<sng:element name="op:indexM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:index">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:value type="string">graph</sng:value>
+<sng:value type="string">tab</sng:value>
+<sng:value type="string">img</sng:value>
+<sng:value type="string">form</sng:value>
+<sng:value type="string">anim</sng:value>
+</sng:choice>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_infoBin">
+<sng:element name="op:infoBin">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:cc">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:value type="string">by</sng:value>
+<sng:value type="string">by-nc</sng:value>
+<sng:value type="string">by-nc-nd</sng:value>
+<sng:value type="string">by-nc-sa</sng:value>
+<sng:value type="string">by-nd</sng:value>
+<sng:value type="string">by-sa</sng:value>
+<sng:value type="string">zero</sng:value>
+<sng:value type="string">gnu-fdl</sng:value>
+<sng:value type="string">publicdomain</sng:value>
+</sng:choice>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:ccVersion">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:value type="string">4.0</sng:value>
+<sng:value type="string">3.0</sng:value>
+<sng:value type="string">2.5</sng:value>
+<sng:value type="string">2.0</sng:value>
+<sng:value type="string">1.0</sng:value>
+</sng:choice>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:cpyrgt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sPara"/>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_langM">
+<sng:element name="op:langM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:code">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_sPara">
+<sng:element name="op:sPara">
+<sng:ref name="_atts"/>
+<sng:ref name="op_sPara_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_sPara_blocs">
+<sng:element name="sc:para">
+<sng:ref name="op_sPara_id"/>
+<sng:ref name="op_sPara_inline"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="_atts"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_sPara_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:phrase">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>url</sng:value>
+</sng:attribute>
+<sng:ref name="op_sPara_id"/>
+<sng:optional>
+<sng:attribute name="xml:lang">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_urlM"/>
+<sng:ref name="op_sPara_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>emp</sng:value>
+</sng:attribute>
+<sng:ref name="op_sPara_id"/>
+<sng:ref name="op_sPara_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>spec</sng:value>
+</sng:attribute>
+<sng:ref name="op_sPara_id"/>
+<sng:optional>
+<sng:ref name="op_txtM"/>
+</sng:optional>
+<sng:ref name="op_sPara_inline"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_sPara_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+<sng:define name="op_tTxt">
+<sng:element name="op:tTxt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_tTxt_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_tTxt_blocs">
+<sng:oneOrMore>
+<sng:choice>
+<sng:element name="sc:para">
+<sng:ref name="_atts"/>
+<sng:ref name="op_tTxt_id"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+<sng:element name="sc:itemizedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_tTxt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_tTxt_id"/>
+<sng:optional>
+<sng:ref name="op_tTxt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+<sng:element name="sc:orderedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_tTxt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_tTxt_id"/>
+<sng:optional>
+<sng:ref name="op_tTxt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+</sng:choice>
+</sng:oneOrMore>
+</sng:define>
+<sng:define name="op_tTxt_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:phrase">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>url</sng:value>
+</sng:attribute>
+<sng:ref name="op_tTxt_id"/>
+<sng:optional>
+<sng:attribute name="xml:lang">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_urlM"/>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>loc</sng:value>
+</sng:attribute>
+<sng:ref name="op_tTxt_id"/>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>desc</sng:value>
+</sng:attribute>
+<sng:ref name="op_tTxt_id"/>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>emp</sng:value>
+</sng:attribute>
+<sng:ref name="op_tTxt_id"/>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>spec</sng:value>
+</sng:attribute>
+<sng:ref name="op_tTxt_id"/>
+<sng:optional>
+<sng:ref name="op_txtM"/>
+</sng:optional>
+<sng:ref name="op_tTxt_inline"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_tTxt_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+<sng:define name="op_title">
+<sng:element name="op:title">
+<sng:ref name="_atts"/>
+<sng:ref name="op_title_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_title_blocs">
+<sng:element name="sc:para">
+<sng:ref name="op_title_id"/>
+<sng:ref name="op_title_inline"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="_atts"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_title_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>quote</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:ref name="op_title_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>spec</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:optional>
+<sng:ref name="op_txtM"/>
+</sng:optional>
+<sng:ref name="op_title_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>code</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:ref name="op_title_inline"/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>exp</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ind</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>mathtex</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:inlineImg">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>form</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:text xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:inlineImg">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ico</sng:value>
+</sng:attribute>
+<sng:ref name="op_title_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:text xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_title_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+<sng:define name="op_transcript">
+<sng:element name="op:transcript">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:element name="sp:transcriptTxt">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_tTxt" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:choice>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_txt">
+<sng:element name="op:txt">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt_blocs"/>
+</sng:element>
+</sng:define>
+<sng:define name="op_txt_blocs">
+<sng:oneOrMore>
+<sng:choice>
+<sng:element name="sc:para">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:div">
+<sng:attribute name="role">
+<sng:value>blockquote</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_blocs"/>
+</sng:element>
+<sng:element name="sc:itemizedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:ref name="op_txt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+<sng:element name="sc:orderedList">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:zeroOrMore>
+<sng:element name="sc:listItem">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:ref name="op_txt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+<sng:element name="sc:table">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:ref name="op_txtTableM"/>
+</sng:optional>
+<sng:optional>
+<sng:element name="sc:caption">
+<sng:ref name="_atts"/>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_inline"/>
+<sng:optional>
+<sng:attribute name="xml:space">
+<sng:value>preserve</sng:value>
+</sng:attribute>
+</sng:optional>
+</sng:element>
+</sng:optional>
+<sng:zeroOrMore>
+<sng:choice>
+<sng:element name="sc:column">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="width">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:element>
+<sng:element name="sc:column">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>head</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="width">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+<sng:zeroOrMore>
+<sng:choice>
+<sng:element name="sc:row">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_cells_"/>
+</sng:element>
+<sng:element name="sc:row">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>head</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_cells_"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:element>
+</sng:choice>
+</sng:oneOrMore>
+</sng:define>
+<sng:define name="op_txt_inline">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:text/>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>acr</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>glos</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>bib</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ref</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>nome</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>docLnk</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>resLnk</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:uLink">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ucLnk</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:ref name="op_txt_inline" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:phrase">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>url</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:attribute name="xml:lang">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_urlM"/>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>typed</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_typedSpan"/>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>quote</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>emp</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>spec</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:ref name="op_txtM"/>
+</sng:optional>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:inlineStyle">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>code</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:ref name="op_txt_inline"/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>exp</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ind</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:textLeaf">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>mathtex</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:text/>
+</sng:element>
+<sng:element name="sc:inlineImg">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>form</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:text xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:element name="sc:inlineImg">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>ico</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:text xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_txt_id">
+<sng:optional>
+<sng:attribute name="sc:id">
+<sng:data type="ID"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+<sng:define name="op_txt_cells_">
+<sng:zeroOrMore>
+<sng:choice>
+<sng:element name="sc:cell">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="role">
+<sng:value/>
+</sng:attribute>
+</sng:optional>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:attribute name="rowSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:attribute name="colSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:ref name="op_txt_blocs"/>
+</sng:optional>
+</sng:element>
+<sng:element name="sc:cell">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>num</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:attribute name="rowSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:attribute name="colSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:ref name="op_txt_blocs"/>
+</sng:optional>
+</sng:element>
+<sng:element name="sc:cell">
+<sng:ref name="_atts"/>
+<sng:attribute name="role">
+<sng:value>word</sng:value>
+</sng:attribute>
+<sng:ref name="op_txt_id"/>
+<sng:optional>
+<sng:attribute name="rowSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:attribute name="colSpan">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:ref name="op_txt_blocs"/>
+</sng:optional>
+</sng:element>
+</sng:choice>
+</sng:zeroOrMore>
+</sng:define>
+<sng:define name="op_txtM">
+<sng:element name="op:txtM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:lang">
+<sng:ref name="_atts"/>
+<sng:choice sk:autoCreate="first" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:ref name="op_langM"/>
+</sng:choice>
+</sng:element>
+</sng:element>
+</sng:define>
+<sng:define name="op_txtTableM">
+<sng:element name="op:txtTableM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:index">
+<sng:ref name="_atts"/>
+<sng:choice>
+<sng:value type="string">graph</sng:value>
+<sng:value type="string">tab</sng:value>
+<sng:value type="string">img</sng:value>
+<sng:value type="string">form</sng:value>
+<sng:value type="string">anim</sng:value>
+</sng:choice>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_typedSpan">
+<sng:element name="op:typedSpan">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:type">
+<sng:ref name="_atts"/>
+<sng:attribute name="href" xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"><sng:data type="string"/></sng:attribute>
+<sng:empty xmlns:snga="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+</sng:element>
+<sng:optional>
+<sng:element name="sp:desc">
+<sng:ref name="_atts"/>
+<sng:ref name="op_title"/>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:define name="op_urlM">
+<sng:element name="op:urlM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:url">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+<sng:optional>
+<sng:element name="sp:title">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:doc">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:element name="sp:type">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:weight">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:optional>
+<sng:optional>
+<sng:element name="sp:lang">
+<sng:ref name="_atts"/>
+<sng:choice sk:autoCreate="first" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:ref name="op_langM"/>
+</sng:choice>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:optional>
+</sng:element>
+</sng:define>
+<sng:start>
+
+<sng:ref name="_atts"/>
+
+<sng:ref name="op_audioM--dist"/>
+
+
+</sng:start>
+
+<sng:define name="_atts">
+<sng:optional>
+<sng:attribute name="sc:ignore">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+</sng:grammar>

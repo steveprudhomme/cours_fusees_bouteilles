@@ -1,0 +1,111 @@
+
+:root {
+	--textStyle: 'Roboto';
+  --titleStyle: 'Chivo';
+  --fontSize: 1.1em;
+  --menuWidth: 300px;
+}
+
+html[data-theme='light'] {
+  --homeBG1:#e9cdbc;
+  --homeBG2:#E8CEC4;
+
+	--linkColor:#AD364B;
+
+	--btnBG:#250712;
+
+	--borderColor:#DED2DE;
+
+  --toolboxBG:#F6E9E6;
+	--toolboxFG:#72565D;
+	--toolboxActiveBG:#FBD5D9;
+	--toolboxActiveFG:#AD364B;
+
+  --contentBG: #F5F1F3;
+	--contentFG: #3F3F3F;
+	--contentLightFG: #7b7b7b;
+
+	--accentDarkBG: #AD364B;
+	--accentDarkFG: #ffffff;
+	--accentLightBG: #E8CEC4;
+	--accentLightFG: #000;
+
+  --pBkText: #5B198F;
+  --pBkTextLight: #E8DFFF;
+  --pBkDemo: #3A4D7C;
+  --pBkDemoLight: #DFE9FF;
+  --pBkExpression: #318808;
+  --pBkExpressionLight: #E6FFC6;
+  --pBkWarning: #970000;
+  --pBkWarningLight: #FFD7D7;
+  --pBkComplement: #876E0E;
+  --pBkComplementLight: #FFF9C6;
+
+  --headerBG:#F5F1F3;
+  --headerFG:#3F3F3F;
+
+	--footerBG:#F5F1F3;
+	--footerFG:#3F3F3F;
+
+	--quizAnswerBG:#e2f8d9;
+	--quizAnswerFG:#295716;
+	--quizWorstFG:#aa1016;
+	--quizWorstBG:#ffe7e7;
+	--quizBadFG:#cd903c;
+
+	--inputBG:#F6E9E6;
+	--inputBorder:#bababa;
+	--inputFocus:#AD364B;
+}
+
+html[data-theme='dark'] {
+  --homeBG1:#3d3a38;
+  --homeBG2:#000000;
+
+  --linkColor:#FF94A7;
+
+	--btnBG:#FBD5D9;
+
+  --borderColor: #3F3F3F;
+
+  --toolboxBG:#3b3b3b;
+  --toolboxFG:#FFE5F3;
+  --toolboxActiveBG:#250712;
+  --toolboxActiveFG:#FFE5F3;
+
+  --contentBG:#292929;
+  --contentFG: #E5D4DC;
+  --contentLightFG: #c0c0c0;
+
+  --accentDarkBG: #FF94A7;
+  --accentDarkFG: #000000;
+  --accentLightBG: #3F3F3F;
+  --accentLightFG: #fff;
+
+  --pBkText: #e7c8ff;
+  --pBkTextLight: #3a2d5d;
+  --pBkDemo: #DFE9FF;
+  --pBkDemoLight: #3A4D7C;
+  --pBkExpression: #E6FFC6;
+  --pBkExpressionLight: #318808;
+  --pBkWarning: #FFD7D7;
+  --pBkWarningLight: #970000;
+  --pBkComplement: #FFF9C6;
+  --pBkComplementLight: #876E0E;
+
+  --headerBG:#292929;
+  --headerFG:#E5D4DC;
+
+  --footerBG:#292929;
+  --footerFG:#E5D4DC;
+
+  --quizAnswerBG:#293e21;
+  --quizAnswerFG:#3ca610;
+  --quizWorstFG:#ff5d63;
+  --quizWorstBG:#36191a;
+  --quizBadFG:#bf740e;
+
+  --inputBG: #3B3B3B;
+  --inputBorder: #191919;
+  --inputFocus: #FF94A7;
+}

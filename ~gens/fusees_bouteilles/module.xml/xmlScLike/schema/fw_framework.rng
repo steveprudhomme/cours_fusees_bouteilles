@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sng:grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" xmlns:sng="http://relaxng.org/ns/structure/1.0" xmlns:sfile="http://www.utc.fr/ics/scenari/v3/file" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sfm="http://www.utc.fr/ics/scenari/v3/filemeta" xmlns:op="utc.fr:ics/opale3" xmlns:rsc="scenari.eu:remote" xmlns:fw="sc.soft:framework">
+<sk:crossDomMgr mgrId="xmlId" lib=":lib:edit/schema/xmlIdMgr.js" xmlns:sk="scenari.eu:schema:metaModel"/>
+<sng:start xmlns:sk="scenari.eu:schema:metaModel">
+
+<sng:ref name="fw_framework"/>
+
+</sng:start>
+						<sng:define name="fw_element" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:element name="fw:element">
+<sng:ref name="_atts"/>
+<sng:attribute name="xml:id">
+<sng:data type="ID"/>
+</sng:attribute>
+<sng:ref name="fw_elementM"/>
+<sng:zeroOrMore>
+<sng:element name="sp:elt">
+<sng:ref name="_atts"/>
+<sng:ref name="fw_element"/>
+</sng:element>
+</sng:zeroOrMore>
+</sng:element>
+</sng:define>
+<sng:define name="fw_elementM" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:element name="fw:elementM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:title">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:element>
+</sng:define>
+<sng:define name="fw_framework" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:element name="fw:framework">
+<sng:ref name="_atts"/>
+<sng:ref name="fw_frameworkM"/>
+<sng:oneOrMore>
+<sng:element name="sp:elt">
+<sng:ref name="_atts"/>
+<sng:ref name="fw_element"/>
+</sng:element>
+</sng:oneOrMore>
+</sng:element>
+</sng:define>
+<sng:define name="fw_frameworkM" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:element name="fw:frameworkM">
+<sng:ref name="_atts"/>
+<sng:optional>
+<sng:attribute name="xml:space" sk:model="HiddenAttr" sk:fixedValue="default">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+<sng:element name="sp:title">
+<sng:ref name="_atts"/>
+<sng:data type="string">
+<sng:param name="minLength">1</sng:param>
+</sng:data>
+</sng:element>
+</sng:element>
+</sng:define>
+
+<sng:define name="_atts" xmlns:sk="scenari.eu:schema:metaModel">
+<sng:optional>
+<sng:attribute name="sc:ignore">
+<sng:data type="string"/>
+</sng:attribute>
+</sng:optional>
+</sng:define>
+</sng:grammar>

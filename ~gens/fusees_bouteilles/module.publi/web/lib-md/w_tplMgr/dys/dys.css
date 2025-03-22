@@ -1,0 +1,117 @@
+/* === START Dys fonts ========================================================= */
+@font-face {
+	font-display: swap;
+	font-family: 'OpenDyslexic';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/OpenDyslexic-Regular.otf') format('opentype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'OpenDyslexic';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/OpenDyslexic-Bold.otf') format('opentype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'OpenDyslexic';
+	font-style: italic;
+	font-weight: normal;
+	src: url('fonts/OpenDyslexic-Italic.otf') format('opentype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'OpenDyslexic';
+	font-style: italic;
+	font-weight: bold;
+	src: url('fonts/OpenDyslexic-BoldItalic.otf') format('opentype');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'OpenDyslexicMono';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/OpenDyslexicMono-Regular.otf') format('opentype');
+}
+/* === END Dys fonts =========================================================== */
+/* === START Dys content styles ================================================ */
+.dysFontActive_true {
+	font-family: "OpenDyslexic";
+}
+.dysFontActive_true .CodeMirror-static pre{
+	font-family: "OpenDyslexicMono";
+	font-size:0.9em;
+}
+.dysFontActive_true #menu ul.mnu,
+.dysFontActive_true .op_txt_is_quote,
+.dysFontActive_true .op_labelTxt_is_quote,
+.dysFontActive_true .op_clozeTxt_is_quote,
+.dysFontActive_true select.gapInput,
+.dysFontActive_true input[type="text"].gapInput,
+.dysFontActive_true .exoAsw input {
+	font-family: "OpenDyslexic";
+}
+.dysFontActive_true header h1{
+	line-height:1em;
+}
+.dysFontActive_true p{
+	font-size: inherit;
+}
+.dysFontActive_true ul#accessibility{
+	font-size:6pt;
+}
+.dysFontActive_true #titleRoot{
+	font-size:0.9em;
+}
+.dysFontActive_true .MathJax_SVG_Display,
+.dysFontActive_true .txt_mathtex_tl {
+	font-family: initial;
+}
+.dysAltLineColor_true .dysColor_0{
+	color:#DD0000;
+}
+.dysAltLineColor_true .dysColor_1{
+	color:#0F8111;
+}
+.dysAltLineColor_true .dysColor_2{
+	color:#0000FF;
+}
+.dysMoreSpace_true #content{
+	line-height:2;
+	word-spacing:0.6em;
+}
+.dysMoreSpace_true #content p{
+	line-height:2;
+}
+.dysMoreSpace_true.dysFontActive_true #content{
+	line-height:2.3;
+}
+.dysMoreSpace_true.dysFontActive_true #content p{
+	line-height:2.3;
+}
+span.counter {
+	display: none;
+}
+.dysNumHeadings_true span.counter {
+	display: initial;
+}
+.dysScaleH2_true.dysScaleH2_1 h2 {
+	font-size: 190%;
+}
+.dysScaleH2_true.dysScaleH2_2 h2 {
+	font-size: 170%;
+}
+.dysScaleH2_true.dysScaleH2_3 h2 {
+	font-size: 150%;
+}
+.dysScaleH2_true.dysScaleH2_4 h2 {
+	font-size: 135%;
+}
+.dysScaleH2_true.dysScaleH2_5 h2 {
+	font-size: 130%;
+}
+.dysScaleH2_true.dysScaleH2_6 h2 {
+	font-size: 125%;
+}
+/* === END Dys content styles ================================================== */
