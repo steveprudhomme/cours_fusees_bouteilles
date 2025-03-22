@@ -3,6 +3,7 @@
 {"wordPattern":"[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?|\\d+(?:[,.]\\d+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"notre":1,"vont":1,"fait":1,"avoir":1,"mon":1,"être":1,"des":1,"mot":1,"sont":1,"les":1,"avant":1,"vous":1,"peu":1,"il":1,"tes":1,"dans":1,"nous":1,"tandis":1,"au":1,"tellement":1,"moins":1,"force":1,"je":1,"même":1,"droite":1,"dos":1,"sien":1,"parole":1,"sa":1,"elle":1,"ces":1,"sur":1,"ton":1,"si":1,"ça":1,"quand":1,"encore":1,"mine":1,"peut":1,"ses":1,"dedans":1,"ce":1,"ci":1,"quelles":1,"quels":1,"haut":1,"où":1,"alors":1,"tout":1,"ta":1,"tous":1,"chaque":1,"la":1,"état":1,"cela":1,"le":1,"sujet":1,"autre":1,"comme":1,"font":1,"tu":1,"fois":1,"est":1,"nouveaux":1,"mais":1,"ici":1,"tels":1,"nommés":1,"du":1,"maintenant":1,"son":1,"ma":1,"depuis":1,"soyez":1,"parce":1,"été":1,"par":1,"seulement":1,"voie":1,"pas":1,"pourquoi":1,"sans":1,"essai":1,"en":1,"ceux":1,"donc":1,"et":1,"début":1,"eu":1,"ils":1,"voient":1,"hors":1,"ni":1,"étions":1,"avec":1,"très":1,"vu":1,"bon":1,"que":1,"faites":1,"qui":1,"plupart":1,"deux":1,"aucuns":1,"sous":1,"elles":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"leur":1,"valeur":1,"ou":1,"pour":1,"trop":1,"pièce":1,"dehors":1,"là":1,"juste":1,"quelle":1,"comment":1,"personnes":1,"votre":1,"quel":1,"étaient":1}},{"type":"filterAccentedLatinLetters"}]}
 cuivre	j.002
 trois	h.010	n.001
+formules	p.010
 optimal	h.001
 mince	l.001
 deplacer	l.001
@@ -22,16 +23,17 @@ manometre	j.001	n.001
 frottement	p.001
 sommet	o.001	p.001
 passe	b.001
-0	h.002
-1	l.001	n.006
-2	h.003	n.002
-3	h.001	l.003	n.002
+0	h.002	p.002
+1	l.001	n.006	p.002
+2	h.003	n.002	p.004
+3	h.001	l.003	n.002	p.001
 4	h.003	l.001
 dacheter	j.001
 ciseaux	h.001
-5	j.002	l.002	n.005
+5	j.002	l.002	n.005	p.001
 conception	e.010	l.010
 facilement	b.001
+9	p.001
 detail	h.001
 nutilisez	h.001
 adaptes	h.001
@@ -43,25 +45,26 @@ accessible	o.001
 elevee	j.001
 role	l.010
 datteindre	b.001
-ejectee	p.001
+ejectee	p.002
 efficacement	i.001
 lenergie	l.001
 etanche	l.010
 stirrup	j.001
+densite	p.001
 oeuvre	b.001
 dingenierie	b.001
 seul	j.001
 differents	i.001	k.001
 gabarit	l.001
 couvrez	h.001
-resume	h.001	p.010
+resume	h.001	p.011
 essayez	n.001
 precedentes	i.001	m.001
 adopter	j.001
 pied	j.001
 the	j.001
 boisson	b.001	h.003
-x	j.010	l.020
+x	j.010	l.020	p.010
 constituera	h.001
 ressemble	h.001
 evaluer	m.001
@@ -98,7 +101,7 @@ feuille	l.001
 lancements	h.001
 indispensable	j.010
 action-reaction	p.110
-vol	b.001	l.003	m.001	n.131	p.011
+vol	b.001	l.003	m.001	n.131	p.013
 concu	j.001
 lensemble	l.001
 usages	l.001
@@ -109,12 +112,13 @@ activee	l.001
 constatez	n.001
 rigidite	h.001
 pouvez	h.001	n.001
-rampe	b.010	j.101	p.010
+rampe	b.010	j.101	p.011
 mobile	j.001
 detecter	n.001
 gazeuse	b.001	h.004
 telecommande	l.001
 egalement	b.001
+rho	p.002
 deploye	p.001
 deconseillees	j.001
 symetriquement	l.001
@@ -129,6 +133,7 @@ variation	n.020
 ajoute	b.001
 trouver	l.011
 dabord	j.001
+brutale	p.001
 gherkin	j.001
 cle	l.010	n.001
 pet	h.001	l.001
@@ -146,14 +151,14 @@ complexes	j.001
 remplissez	n.001
 rappel	l.041	p.010
 casse	l.001
-lancement	b.041	d.010	h.001	i.002	j.036	l.001	n.030	o.001	p.020
+lancement	b.041	d.010	h.001	i.002	j.036	l.001	n.030	o.001	p.022
 ait	b.001
-courbe	l.001
+courbe	l.001	p.011
 propre	j.011
 darrosage	j.001
 cameras	n.001
 fondamentaux	g.010	o.001	p.010
-inertie	p.001
+inertie	p.002
 creees	j.001
 connecteur	j.002
 conviennent	h.001
@@ -163,7 +168,7 @@ futurs	n.001
 approche	k.001
 lente	l.001
 trouvez	h.001	l.001
-lair	b.002	h.001	l.020	p.103
+lair	b.002	h.001	l.020	p.117
 fuseonautique	a.100	c.100	d.100	e.100	f.100	g.100	i.100	k.100	m.100	o.100
 papier	n.001
 mouvement	p.001
@@ -197,7 +202,8 @@ chauffe	l.001
 chronometre	n.001
 initiale	j.001	n.001
 objet	b.001
-sortie	l.003
+sortie	l.003	p.001
+simplifiee	p.001
 instable	l.002
 datterrissage	n.010
 roue	n.001
@@ -215,10 +221,11 @@ voulu	b.001	j.001
 design	b.001	e.001	l.001	n.001
 construction	h.010
 devant	l.011
-masse	h.001	l.126	n.110
+masse	h.001	l.126	n.110	p.002
 defini	i.001
+direction	p.001
 fiabilite	l.001
-totale	h.001
+totale	h.001	p.001
 filment	n.001
 tranchants	h.001
 serrage	j.003
@@ -231,7 +238,8 @@ stable	j.002	l.004
 optimisant	l.001
 conseils	h.010	n.010
 joints	l.001
-poids	h.003	j.001	k.001	l.112
+poids	h.003	j.001	k.001	l.112	p.002
+utiles	p.010
 arriere	h.001	l.002
 grandes	l.001
 polyethylene	h.001
@@ -247,7 +255,7 @@ principalement	l.001
 garantissent	h.001
 element	j.001
 quune	a.011	b.010
-dune	e.010	f.010	l.011	n.010	o.001
+dune	e.010	f.010	l.011	n.010	o.001	p.001
 frein	j.001
 superieure	j.001
 ameliorer	k.002	n.002
@@ -297,7 +305,7 @@ repeter	l.001
 metres	b.001
 legere	h.001	l.001
 vitesses	b.001
-gravite	l.001	o.001	p.103
+gravite	l.001	o.001	p.109
 vendre	h.001
 conique	l.001
 rigoureux	o.001
@@ -307,7 +315,7 @@ legers	h.001	l.001
 aerodynamiques	o.001
 continue	p.001
 jeu	p.010
-poussee	l.001	o.001	p.103
+poussee	l.001	o.001	p.119
 champ	n.001
 pompe	b.001	j.124
 reculer	l.001
@@ -325,7 +333,7 @@ quatre	h.010
 retenir	b.001
 corrigent	l.001
 augmenter	l.002
-apogee	l.001	p.001
+apogee	l.001	p.003
 distance	n.011
 aux	h.001	i.001
 passionnes	j.001	n.001
@@ -338,6 +346,7 @@ aspects	k.001
 ralentit	b.001
 resistant	h.002
 panneau	h.001
+description	p.001
 effort	h.001
 quoi	h.010	n.010
 video	n.011
@@ -352,7 +361,7 @@ perd	l.001
 provoquent	l.001
 systemes	b.010
 binome	n.001
-ralentie	p.001
+ralentie	p.002
 precis	o.001
 renforcer	l.002
 bouchon	j.003	l.001
@@ -362,6 +371,7 @@ npl	j.001
 resultat	l.010
 augmentant	b.001
 percer	j.001	l.002
+nette	p.010
 laterales	l.001
 cles	h.001
 travailler	b.001
@@ -399,7 +409,7 @@ augmentez	l.001	n.001
 critiques	i.001
 suit	l.001
 decorer	h.021
-frontale	h.001
+frontale	h.001	p.001
 echelle	n.001
 dangereux	b.010	i.001
 loi	p.010
@@ -460,14 +470,16 @@ mauvais	h.001
 faits	i.001
 petits	h.001
 point	h.001	j.001	l.012	n.010
-maximale	l.002	n.010
+maximale	l.002	n.010	p.001
 principal	h.001
 percage	j.001
 comparaison	j.011
+duree	p.001
 introduction	d.001	e.001	f.001	g.001	i.010	k.010	m.010	o.010
 ligne	j.001	l.001
 original	n.010
 atteintes	b.002
+typique	p.010
 fluide	b.001
 aucune	l.001
 numeriques	n.001
@@ -478,6 +490,7 @@ liberer	b.001	j.001	l.001
 carenage	l.003	n.001
 danalyse	f.010	n.010
 petite	l.001
+approx	p.001
 quelques	h.002
 aucun	j.001
 egale	p.002
@@ -496,13 +509,13 @@ faible	l.001
 raccord	j.001
 positionnes	l.001
 positionner	k.001
-secondes	n.001
+secondes	n.001	p.001
 pourraient	h.001
 caractere	b.001
 trop-plein	j.001
 active	j.001	p.001
 court	l.001
-terminale	p.001
+terminale	p.002
 moyen	b.001
 relever	b.001
 compression	j.001
@@ -538,6 +551,7 @@ possible	l.001	n.001
 informatique	n.001
 comparer	m.001
 limonade	h.001
+transition	p.002
 materiel	h.001
 pourriez	j.001
 fusil	n.001
@@ -548,12 +562,12 @@ vieux	h.002
 ajustez	l.001
 jus	h.001
 impedance	l.012
-augmente	p.003
+augmente	p.004
 excellente	h.001
 extremement	h.001
 dit	h.001
 ruban	h.004	n.001
-acceleration	j.001	n.001	p.100
+acceleration	j.001	n.001	p.113
 vend	j.001
 tenir	h.001
 exemples	n.010
@@ -581,14 +595,14 @@ elastique	l.001
 variez	n.001
 simulateur	n.001
 voiture	j.001
-trainee	k.001	l.123
+trainee	k.001	l.123	p.012
 morceaux	l.001
 contenu	h.002
 toutes	p.001
 limportance	j.010
 trou	j.001	l.001
 passer	l.001
-equilibre	p.102
+equilibre	p.103
 sil	h.002	n.001
 fascinant	b.001
 mise	b.001
@@ -600,10 +614,10 @@ partie	h.001
 variantes	j.001
 soudure	j.002
 ficelle	l.001
-une	b.037	c.011	h.029	i.001	j.016	k.002	l.039	m.001	n.005	o.001	p.003
+une	b.037	c.011	h.029	i.001	j.016	k.002	l.039	m.001	n.005	o.001	p.004
 presente	h.001
 oscille	l.001
-fusee	a.011	b.046	c.011	d.010	e.010	f.011	g.001	h.049	i.002	j.013	k.002	l.029	m.002	n.031	o.002	p.004
+fusee	a.011	b.046	c.011	d.010	e.010	f.011	g.001	h.049	i.002	j.013	k.002	l.029	m.002	n.031	o.002	p.006
 etiquettes	h.001
 vole-t	o.001
 clark	j.001
@@ -611,7 +625,7 @@ clark	j.001
 tubes	j.002
 partir	l.001
 equipe	b.001
-vitesse	b.001	l.004	n.011	p.004
+vitesse	b.001	l.004	n.011	p.019
 vers	b.001	h.001	l.003	p.005
 plomberie	j.005
 sincline	l.002
@@ -620,15 +634,17 @@ balance	n.001
 raccords	j.102
 action	p.001
 leger	l.001
-drag	l.010
-surface	h.002	l.001	p.001
+drag	l.010	p.004
+text	p.009
+surface	h.002	l.001	p.002
 recommandee	l.001
 large	l.001
 techniquement	h.001
 fabrication	j.001
 bouteilles	a.100	c.100	d.100	e.100	f.100	g.100	h.003	i.100	k.100	l.008	m.100	n.001	o.100
 jaime	h.001
-propulsion	n.001
+propulsion	n.001	p.002
+newtons	p.001
 idees	n.010
 fiche	n.011
 acheter	h.001
@@ -640,6 +656,7 @@ gonflage	i.001
 appliques	g.010	p.010
 ci-dessous	h.001	n.001
 blessures	h.001
+instantanee	p.001
 lisse	l.002
 caoutchouc	h.001
 pistes	h.001
@@ -648,7 +665,7 @@ dautres	l.001	n.001
 travail	n.001
 angle	b.001	n.111
 expliquees	o.001
-libre	p.001
+libre	p.002
 appliquer	j.001
 camera	n.002
 modifications	m.001
@@ -687,7 +704,7 @@ faites-moi	h.001
 experiences	n.010
 plus	b.003	h.003	j.003	k.002	l.005	m.001	n.002	o.001
 offre	h.001
-diminue	n.001	p.001
+diminue	n.001	p.002
 voire	i.001
 bonnes	n.010
 goulot	h.001	j.002
@@ -705,16 +722,18 @@ ecrou	l.001
 ajustements	j.001
 pratique	b.001	h.001
 suffisante	b.001
-total	n.010
+total	n.010	p.002
 utiliser	b.001	i.001	k.001	l.001
 adaptateur	j.001
 modifie	j.001
+montee	p.002
 comprime	b.001
 loin	k.001	o.001
 puis	h.001	n.001
 decollage	l.002
 tente	j.001
 plusieurs	l.001	n.001
+frac	p.003
 lois	o.001
 decouvrir	b.001
 subit	p.001
@@ -733,7 +752,7 @@ uniquement	j.001
 fabriquees	h.001
 ascendante	l.001
 108	b.001
-nulle	l.001
+nulle	l.001	p.002
 dun	j.001	n.001
 moyenne	j.002
 regissent	o.001
@@ -751,7 +770,7 @@ populaire	h.001
 egards	h.001
 observer	h.001	n.001
 speciale	j.001
-dejection	l.001
+dejection	l.001	p.001
 montrant	h.001
 10	l.001	n.004
 12	n.001
@@ -759,6 +778,7 @@ au-dela	l.001
 15	j.002	n.003
 largement	j.001
 18	n.002
+cdot	p.006
 variete	h.001
 faciliter	j.001
 dexperiences	n.010
@@ -773,7 +793,7 @@ amusant	b.001
 20	n.001
 21	j.002
 22	j.003
-descente	b.001	p.011
+descente	b.001	p.014
 identiques	h.001	n.001
 dair	j.001
 tourne	l.001
@@ -795,7 +815,8 @@ boissons	h.003
 latterrissage	h.001
 particularites	n.001
 reduit	b.001
-atteinte	l.001
+stabilisee	p.001
+atteinte	l.001	p.001
 puissant	n.010
 fabriquer	b.010	c.011	d.010	h.011	j.011
 integre	j.001
@@ -811,7 +832,7 @@ but	l.001
 commercial	i.001	j.001
 carton	h.002
 joint	j.002	l.001
-chute	b.001	l.001	p.001
+chute	b.001	l.001	p.002
 huile	j.001
 tintin	h.001
 quest	i.001
@@ -831,14 +852,16 @@ taille	h.001	l.010
 difficile	i.001	l.001	n.001
 flying	j.001
 maintiennent	j.001
-forces	l.001	o.001	p.121
+forces	l.001	o.001	p.123
 silhouette	l.012
 forcer	n.001
+coefficient	p.001
 contexte	j.001
 60	h.001
 62	h.001
 jusqua	b.001	l.001	p.002
 support	j.001
+etape	p.001
 mecaniques	i.001	j.001
 vertical	n.001
 171	h.002
@@ -858,9 +881,12 @@ problemes	n.001
 grande	h.001	l.001	p.001
 bars	l.001	n.001
 significative	l.001
+stabilisation	p.001
 estimer	k.001	l.010	n.001
+lentement	p.001
 apprendrez	k.001	m.001
-rapide	l.001
+81	p.001
+rapide	l.001	p.001
 symetriques	h.001
 choix	j.010	l.010
 base	c.011	h.021	i.001	j.001	k.001
@@ -886,9 +912,10 @@ parachutes	l.010
 inclinees	l.001
 envisager	j.001
 interne	h.001	j.001	l.001
-resistance	l.001	p.103
+resistance	l.001	p.117
 multi-bouteilles	l.010
 douceur	b.001
+ascension	p.001
 lors	h.001	n.001
 valve	j.011	l.002
 plastique	h.003	j.003	l.001
@@ -898,11 +925,11 @@ sportif	n.001
 requis	h.001
 similaires	h.001
 reduire	k.002	l.021
-eau	a.011	b.031	c.011	d.010	e.010	f.010	g.011	h.011	i.001	j.010	l.010	m.001	n.022	o.002	p.010
+eau	a.011	b.031	c.011	d.010	e.010	f.010	g.011	h.011	i.001	j.010	l.010	m.001	n.022	o.002	p.011
 elles-memes	j.001
 place	j.002
 assemblages	j.001
-leau	b.003	h.002	l.003	n.001	p.003
+leau	b.003	h.002	l.003	n.001	p.005
 dajouter	l.001
 ascendant	p.010
 vissee	j.001
@@ -917,7 +944,8 @@ fusees	a.100	c.100	d.100	e.100	f.100	g.110	h.011	i.100	j.002	k.100	l.011	m.100	n
 permet	b.001	j.001
 nindique	l.001
 dimensions	h.001
-voici	j.001
+principales	p.001
+voici	j.001	p.001
 passage	l.001
 avez	m.001
 gravitationnelle	p.001
@@ -925,10 +953,11 @@ avons	h.001	i.001
 passe-t	o.001
 optimisation	e.001
 generale	l.001
+constante	p.001
 laquelle	b.001
 rigides	h.001
 divers	n.010
-apres	h.001	k.001	l.001
+apres	h.001	k.001	l.001	p.001
 depart	b.001	h.001	n.010
 stockent	l.001
 ameliorent	l.001

@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<trace><start t="21/03/25 23:45:07"/><l t="FatalError" d="21/03/25 23:45:07"><message type="FatalError" ts="1742615107695" appCtx="chain" thread="ForkJoinPool-1-worker-51" desc="Generation failed."><message type="Exception" ts="1742615107695" appCtx="chain" thread="ForkJoinPool-1-worker-51" desc="Impossible de supprimer définitivement C:\Users\steve\OneDrive\Documents\Opale 24\~gens\fusees_bouteilles\module.publi\print\module.pdf"><details>com.scenari.m.ge.generator.base.DestLockException: Impossible de supprimer définitivement C:\Users\steve\OneDrive\Documents\Opale 24\~gens\fusees_bouteilles\module.publi\print\module.pdf
-	at eu.scenari.gen.GenStatic.xRemoveDst(GenStatic.java:1060)
-	at eu.scenari.gen.GenStatic.xRemoveDst(GenStatic.java:871)
-	at eu.scenari.gen.GenStatic.xRemoveDst(GenStatic.java:867)
-	at eu.scenari.gen.GenStatic.wResetDestination(GenStatic.java:857)
-	at eu.scenari.gen.GenStatic.initGenerateByDiff(GenStatic.java:667)
-	at eu.scenari.gen.GenStatic.generate(GenStatic.java:239)
-	at eu.scenari.wsp.module.gen.ThreadGen.call(ThreadGen.java:179)
-	at eu.scenari.wsp.module.gen.ThreadGen.run(ThreadGen.java:166)
-	at eu.scenari.core.universe.Universe$2.run(Universe.java:472)
-	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-</details></message></message></l><end t="21/03/25 23:45:07"/></trace>
+<trace><start t="22/03/25 09:20:04"/><end t="22/03/25 09:20:08"/></trace>
